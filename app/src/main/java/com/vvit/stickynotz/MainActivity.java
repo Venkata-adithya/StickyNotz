@@ -2,7 +2,6 @@ package com.vvit.stickynotz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.graphics.Paint;

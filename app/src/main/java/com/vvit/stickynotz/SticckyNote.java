@@ -22,7 +22,7 @@ public class SticckyNote {
                 text.append("\n");
             }
             br.close();
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
         }
         return text.toString();
@@ -34,7 +34,7 @@ public class SticckyNote {
         try {
             fos = context.getApplicationContext().openFileOutput("gfg.txt",Context.MODE_PRIVATE);
             fos.write(text.getBytes());
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
         }finally {
             if (fos!=null){
